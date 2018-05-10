@@ -1,3 +1,35 @@
+html {
+	background-color: white;
+}
+
+header {
+	background-color: white;
+	color: black;
+	padding-bottom: 20px;
+	text-align: center
+}
+
+body {
+	background-color: black;
+	color: white;
+	margin: 0 0 0 0;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
+footer img {
+	display: inline-block;
+	margin-left: 10px;
+}
+footer {
+	margin-left: 50px
+}
+
 h1, h2, h3, h4 {
 	font-family: 'Abril Fatface', cursive;
 }
@@ -5,19 +37,79 @@ h1, h2, h3, h4 {
 p, li {
 	font-family: 'Oswald', sans-serif;
 }
+
+p {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2.25em;
+}
+h3 {
+	font-size: 1.75em;
+}
+h4{
+	font-size: 1.125em;
+}
+
+a {
+	color: black;
+	font-size: 1.2em;
+}
+
+#nav {
+}
+
 #nav li{
 	display: inline;
+	padding-right: 50px;
 }
 #nav li ul{
 	position: absolute;
-	display: block;
+	display: block-inline;
 	visibility: hidden;
 	opacity: 0;
-	transition: all 0.5s ease;
+	transition: all 1s ease;
+	text-align: left;
 }
 #nav li:hover ul{
 	position: absolute;
-	display: block;
+	display: block-inline;
 	visibility: visible;
 	opacity: 1;
+	padding-left: 35%
+}
+
+#home {
+	text-align: center;
+}
+
+#about {
+	width: 560px;
+	padding-left: 50px;
+}
+
+#services {
+	padding-left: 50px;
+}
+#services:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+#services1 {
+	float: left;
+	width: 300px;
+}
+#services2 {
+	float: left;
+	width: 300px;
+	margin-left: 50px;
+}
+
+#enquiry {
+	margin-left: 50px;
 }
