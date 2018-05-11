@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<script>
+
+</script>
+
+<head>
+	<title>Game Master Society</title>
+	<link rel="stylesheet" href="../resources/gmsoc.css">
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Oswald" rel="stylesheet">
+</head>
+
+<header>
+	<h1>Game Master Society of Australia</h1>
+<div id="nav">
+	<ul>
+		<li><a href="../">Home</a>
+			<ul>
+				<li><a href="../index.html#about">About us</a></li>
+				<li><a href="../index.html#services">Services</a></li>
+				<li><a href="../index.html#enquiry">Enquiries &amp; contact</a></li>
+			</ul>
+		</li>
+		<li><a href="/book">Bookings</a></li>
+	</ul>
+</div>
+</header>
+
+<body>
+	<h1>Booking form</h1>
+	<img id="bookingpic" src="../resources/game4.jpg" alt="gamepicture">
+	<div id=bookingform>
+	<form action="booking.php" method="post" class="form">
+	<p>Name:</p>
+		<p><input name="name" id="name" required></p>
+	<p>Phone Number:</p>
+		<p><input type="tel" name="phone" id="phone"></p>
+	<p>Email Address:</p>
+		<p><input type=email name="email" id="email"></p>
+	<p>Preferred contact method:</p>
+		<label><input type="radio" name="contactmethod" value="phone" id="contactphone">Phone</label>
+		<label><input type="radio" name="contactmethod" value="email" id="contactemail">Email</label>
+	<p>Street address:</p>
+		<p><input name="streetaddress" placeholder="e.g. Unit 1, 123 Happy St." id="streetaddress" required></p>
+		<p><input name="suburb" placeholder="City/town/suburb" id="suburb" required></p>
+	<p>Service:</p>
+		<p><select name="servicetype" id="servicetype" required>
+			<option value="gamer">Gamer night</option>
+			<option value="party">Party</option>
+			<option value="dnd">D&amp;D</option>
+			<option value="corporate">Corporate event</option>
+			<option value="selprog">SEL program</option>
+		</select>
+	<p>Date:</p>
+		<input id="date" name="date" type="date">
+	<p>Time:</p>
+		<input id="time" name="time" type="time">
+	<p>Additional information:</p>
+		<textarea rows="5" cols="50"></textarea>
+	<p><input type="submit"></p>
+</div>
+</body>
+
+<footer>
+	<p>Connect with us on <a href="facebook.com"><img src="../resources/facebook.png" width="55" height="55" title="Facebook" alt="Facebook"></a><a href="instagram.com"><img src="../resources/instagram.png" width="50" height="50" title="Instagram" alt="Instagram"></a><a href="twitter.com"><img src="../resources/twitter.png" width="50" height="50" title="Twitter" alt="Twitter"></a></p>
+	<p><a href="mailto:contact@gmsociety.org">contact@gmsociety.org</a></p>
+	<p>Copyright © 2018 GMSociety. All Rights Reserved.</p>
+</footer>
+</html>
